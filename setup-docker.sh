@@ -1,5 +1,5 @@
 #!/bin/bash
-docker pull linuxserver/webtop:arch-kde
+docker pull linuxserver/webtop:arch-i3
 docker run -d \
   --name=webtop \
   -e PUID=1000 \
@@ -10,4 +10,4 @@ docker run -d \
   -v /path/to/data:/config \
   --shm-size="1gb" \
   --restart unless-stopped \
-  linuxserver/webtop:arch-kde
+  linuxserver/webtop:arch-i3
